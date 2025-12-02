@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Know Your Bullmastiff – Honest Guide to Raising a Gentle Giant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="KnowYourBullmastiff.com – a small, honest guide to choosing, raising, training, and caring for Bullmastiff dogs. Practical tips from puppy to senior." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Basic OpenGraph for sharing -->
+  <meta property="og:title" content="Know Your Bullmastiff" />
+  <meta property="og:description" content="A small but complete guide to raising Bullmastiff dogs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://knowyourbullmastiff.com" />
+  <!-- Replace with real image later -->
+  <meta property="og:image" content="https://knowyourbullmastiff.com/og-image.jpg" />
+
+  <style>
+    :root {
+      --bg-main: #fff7ec;
+      --bg-card: #ffffff;
+      --accent: #f4a261;
+      --accent-dark: #e76f51;
+      --text-main: #2b2b2b;
+      --text-muted: #6d6d6d;
+      --border-soft: #f0ddd0;
+      --shadow-soft: 0 10px 25px rgba(0,0,0,0.06);
+      --radius-xl: 20px;
+      --radius-xxl: 28px;
+      --transition-fast: 0.18s ease-out;
+      --max-width: 1100px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #ffe8cc, #fff7ec 40%, #fffaf5 80%);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 0 16px 40px 16px;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .site-wrapper {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0 10px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(to bottom, rgba(255,247,236,0.96), rgba(255,247,236,0.85), rgba(255,247,236,0));
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #f4a261);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 22px;
+      color: #5a2a11;
+      transform: translateY(0);
+      animation: bobble 4s ease-in-out infinite;
+    }
+
+    @keyframes bobble {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-2px); }
+    }
+
+    .logo-text-main {
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      font-size: 18px;
+    }
+
+    .logo-text-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      font-size: 14px;
+    }
+
+    nav a {
+      position: relative;
+      font-weight: 500;
+      color: #5a2a11;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(to right, var(--accent), var(--accent-dark));
+      border-radius: 999px;
+      transition: width var(--transition-fast);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .nav-burger {
+      display: none;
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 99px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.7);
+      font-size: 13px;
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 30px;
+      margin-top: 10px;
+      padding: 28px 20px;
+      border-radius: var(--radius-xxl);
+      background: linear-gradient(135deg, #ffe1ba, #fff7ec 40%, #ffeedd);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      animation: fadeInUp 0.5s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.9);
+      font-size: 11px;
+      color: #855437;
+      margin-bottom: 10px;
+    }
+
+    .hero-tag span { font-size: 15px; }
+
+    .hero-title {
+      font-size: clamp(28px, 4vw, 34px);
+      line-height: 1.08;
+      margin-bottom: 8px;
+      color: #4b2814;
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: #704d36;
+      max-width: 37rem;
+      margin-bottom: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .btn-primary {
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+      border: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 12px 25px rgba(231,111,81,0.55);
+      transform: translateY(0);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(231,111,81,0.45);
+    }
+
+    .btn-ghost {
+      padding: 9px 16px;
+      border-radius: 999px;
+      border: 1px dashed rgba(90,42,17,0.25);
+      background: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-ghost span { font-size: 16px; }
+
+    .hero-note {
+      font-size: 12px;
+      color: #855437;
+      opacity: 0.9;
+    }
+
+    .hero-illustration {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dog-card {
+      width: 260px;
+      border-radius: 26px;
+      background: rgba(255,255,255,0.96);
+      border: 1px solid rgba(255,255,255,0.9);
+      box-shadow: var(--shadow-soft);
+      padding: 14px 14px 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dog-placeholder {
+      height: 150px;
+      border-radius: 18px;
+      background: repeating-linear-gradient(
+        -45deg,
+        #ffe0c2,
+        #ffe0c2 8px,
+        #ffd3a6 8px,
+        #ffd3a6 16px
+      );
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8b4e23;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+      padding: 0 18px;
+    }
+
+    .dog-placeholder small {
+      display: block;
+      font-size: 11px;
+      opacity: 0.9;
+    }
+
+    .dog-caption {
+      font-size: 12px;
+      color: #704d36;
+      margin-bottom: 6px;
+    }
+
+    .dog-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-size: 11px;
+    }
+
+    .dog-tags span {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fff7ec;
+      border: 1px solid #f1d3b5;
+    }
+
+    .hero-badge {
+      position: absolute;
+      right: -4px;
+      bottom: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #2b2b2b;
+      color: #ffe8c9;
+      font-size: 10px;
+      font-weight: 600;
+      transform: rotate(-4deg);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
+
+    /* MAIN LAYOUT */
+    main {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(260px, 0.9fr);
+      gap: 24px;
+    }
+
+    section { margin-bottom: 24px; }
+
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .section-title span {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .pill-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(244,162,97,0.08);
+      border: 1px solid rgba(244,162,97,0.25);
+      font-size: 11px;
+      margin-bottom: 6px;
+      color: #855437;
+    }
+
+    /* CARDS */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: var(--radius-xl);
+      padding: 14px 14px 16px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background 0.2s ease-out;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(255,230,201,0.7), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+      pointer-events: none;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-excerpt {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .card-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .badge {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fff3e3;
+      border: 1px solid #f1c595;
+      font-size: 11px;
+      color: #704d36;
+    }
+
+    /* LIFE STAGE ROW */
+    .stage-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .stage-card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      padding: 12px;
+      border: 1px dashed var(--border-soft);
+      font-size: 13px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .stage-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .stage-note {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .sidebar-card {
+      background: var(--bg-card);
+      border-radius: 18px;
+      padding: 14px 14px 16px;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+      font-size: 13px;
+    }
+
+    .sidebar-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .sidebar-list {
+      list-style: none;
+      margin-top: 6px;
+    }
+
+    .sidebar-list li {
+      padding: 4px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    .sidebar-list span {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    /* AD SLOT */
+    .ad-slot {
+      margin-top: 4px;
+      border-radius: 14px;
+      border: 1px dashed rgba(0,0,0,0.15);
+      background: repeating-linear-gradient(
+        45deg,
+        #fff9f1,
+        #fff9f1 8px,
+        #fff3e3 8px,
+        #fff3e3 16px
+      );
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: #a56b3a;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* NEWSLETTER */
+    .newsletter {
+      margin-top: 6px;
+      padding: 10px 12px;
+      border-radius: 16px;
+      background: #fff9f1;
+      border: 1px solid #f7d2a3;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 13px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .newsletter input[type="email"] {
+      flex: 1;
+      min-width: 120px;
+      padding: 7px 9px;
+      border-radius: 999px;
+      border: 1px solid #f1c595;
+      font-size: 13px;
+    }
+
+    .newsletter button {
+      border-radius: 999px;
+      border: none;
+      padding: 7px 12px;
+      font-size: 13px;
+      background: #2b2b2b;
+      color: #ffe8c9;
+      cursor: pointer;
+    }
+
+    /* BLOG LIST */
+    .blog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .blog-item {
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid rgba(240,221,208,0.9);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .blog-item-title {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .blog-item-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      gap: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 26px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0,0,0,0.04);
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a {
+      color: #a65b2f;
+      font-weight: 500;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 820px) {
+      header { gap: 10px; }
+      nav { display: none; }
+      .nav-burger {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+      .hero { grid-template-columns: 1fr; }
+      main { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 18px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="logo-area">
+        <div class="logo-icon">🐾</div>
+        <div>
+          <div class="logo-text-main">Know Your Bullmastiff</div>
+          <div class="logo-text-sub">Gentle giants, honest advice.</div>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <a href="#basics">Basics</a>
+        <a href="#training">Training</a>
+        <a href="#health">Health</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <button class="nav-burger" type="button" aria-label="Open navigation (placeholder)">
+        ☰ Menu
+      </button>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="hero-tag">
+          <span>🦴</span> No noise. Just Bullmastiffs.
+        </div>
+        <h1 class="hero-title">A tiny website for a very big dog.</h1>
+        <p class="hero-subtitle">
+          KnowYourBullmastiff.com is a small, focused guide on how to choose, raise, and live with a Bullmastiff.
+          No drama, no spam – just straight answers from puppy chaos to sleepy senior.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#basics">
+            <button class="btn-primary" type="button">
+              Start with Bullmastiff basics →
+            </button>
+          </a>
+          <a href="#blog">
+            <button class="btn-ghost" type="button">
+              <span>📚</span> Browse all articles
+            </button>
+          </a>
+        </div>
+
+        <p class="hero-note">
+          Under 15 posts. Easy to read. Built to help new owners avoid the biggest mistakes.
+        </p>
+      </div>
+
+      <div class="hero-illustration">
+        <div class="dog-card">
+          <div class="dog-placeholder">
+            Future hero image here<br />
+            <small>(upload your Bullmastiff photo or logo)</small>
+          </div>
+          <p class="dog-caption">
+            Think of this site as a chill chat with someone who already made the mistakes so you don’t have to.
+          </p>
+          <div class="dog-tags">
+            <span>🏡 Family dog</span>
+            <span>💤 Low energy (mostly)</span>
+            <span>🧠 Stubborn & smart</span>
+            <span>🧸 Gentle (if raised right)</span>
+          </div>
+          <div class="hero-badge">
+            Built for real life, not show rings.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- MAIN CONTENT -->
+      <div>
+        <!-- BASICS -->
+        <section id="basics">
+          <div class="pill-label">
+            🔰 First-time owner?
+            <span>Start here</span>
+          </div>
+          <h2 class="section-title">
+            Bullmastiff basics
+            <span>Core guides to read first</span>
+          </h2>
+
+          <div class="card-grid">
+            <a href="choose-your-bullmastiff.html" class="card">
+              <div class="card-label">Foundation</div>
+              <div class="card-title">How to Choose a Bullmastiff: Breeder, Bloodlines, and Red Flags</div>
+              <p class="card-excerpt">
+                Good breeders, health tests, temperament – and the warning signs that should make you walk away.
+              </p>
+              <div class="card-meta">
+                <span>8 min read</span>
+                <span class="badge">Start here</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-puppy-preparation-checklist.html" class="card">
+              <div class="card-label">Puppy prep</div>
+              <div class="card-title">Preparing Your Home for a Bullmastiff Puppy: 15 Things to Have Ready</div>
+              <p class="card-excerpt">
+                Beds, gates, cleaning tools, safe zones and what you really need before a 10 kg baby tank arrives.
+              </p>
+              <div class="card-meta">
+                <span>9 min read</span>
+                <span>Checklist inside</span>
+              </div>
+            </a>
+
+            <a href="what-to-feed-bullmastiff.html" class="card">
+              <div class="card-label">Feeding</div>
+              <div class="card-title">What to Feed a Bullmastiff: Puppy and Adult Diet Guide</div>
+              <p class="card-excerpt">
+                Kibble, raw, mixed feeding, joint-friendly growth and how to keep weight under control.
+              </p>
+              <div class="card-meta">
+                <span>10 min read</span>
+                <span>Diet basics</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-cost-of-ownership.html" class="card">
+              <div class="card-label">Reality check</div>
+              <div class="card-title">Is It Expensive to Own a Bullmastiff? Real Monthly and Yearly Costs</div>
+              <p class="card-excerpt">
+                Food, vet, training, insurance, gear and the “hidden” bills people never think about.
+              </p>
+              <div class="card-meta">
+                <span>7 min read</span>
+                <span>Blunt & honest</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- TRAINING & DAILY LIFE -->
+        <section id="training">
+          <h2 class="section-title">
+            Training & daily life
+            <span>Living with a 60 kg shadow</span>
+          </h2>
+
+          <div class="card-grid">
+            <a href="are-bullmastiffs-aggressive.html" class="card">
+              <div class="card-label">Temperament</div>
+              <div class="card-title">Are Bullmastiffs Aggressive? Temperament, Myths, and Training</div>
+              <p class="card-excerpt">
+                Guard instincts vs real aggression, what “good with kids” really means and how humans create problems.
+              </p>
+              <div class="card-meta">
+                <span>8 min read</span>
+                <span>Must read</span>
+              </div>
+            </a>
+
+            <a href="training-bullmastiff-at-home.html" class="card">
+              <div class="card-label">Training</div>
+              <div class="card-title">Training a Bullmastiff at Home: Daily Routine for a Calm Dog</div>
+              <p class="card-excerpt">
+                Simple daily structure, basic commands and mental work for stubborn but sensitive dogs.
+              </p>
+              <div class="card-meta">
+                <span>8 min read</span>
+                <span>With examples</span>
+              </div>
+            </a>
+
+            <a href="potty-training-bullmastiff-puppy.html" class="card">
+              <div class="card-label">Puppy</div>
+              <div class="card-title">Potty Training a Bullmastiff Puppy: From Accidents to Reliable</div>
+              <p class="card-excerpt">
+                Schedules, crate use, nights, and how to avoid teaching bad habits by mistake.
+              </p>
+              <div class="card-meta">
+                <span>6 min read</span>
+                <span>Puppy survival</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- HEALTH & LIFESPAN -->
+        <section id="health">
+          <h2 class="section-title">
+            Health & lifespan
+            <span>Planning for 8–10 big, good years</span>
+          </h2>
+
+          <div class="stage-row">
+            <div class="stage-card">
+              <div class="stage-title">Puppy & young dog</div>
+              <div class="stage-note">
+                Growth plates, vet checks, basic health tests and why slow, steady growth matters more than big muscles.
+              </div>
+            </div>
+            <div class="stage-card">
+              <div class="stage-title">Adult years</div>
+              <div class="stage-note">
+                Weight control, joints, exercise balance and routine health checks for a working-class couch potato.
+              </div>
+            </div>
+            <div class="stage-card">
+              <div class="stage-title">Senior Bullmastiff</div>
+              <div class="stage-note">
+                Mobility, cancer risk, heart and breathing issues – and how to make old age comfortable, not tragic.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOG LIST -->
+        <section id="blog">
+          <h2 class="section-title">
+            All articles
+            <span>Small blog, heavy dog</span>
+          </h2>
+
+          <div class="blog-list">
+            <a href="choose-your-bullmastiff.html" class="blog-item">
+              <div class="blog-item-title">How to Choose a Bullmastiff: Breeder, Bloodlines, and Red Flags</div>
+              <div class="blog-item-meta">
+                <span>Choosing</span><span>8 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-puppy-preparation-checklist.html" class="blog-item">
+              <div class="blog-item-title">Preparing Your Home for a Bullmastiff Puppy: 15 Things to Have Ready</div>
+              <div class="blog-item-meta">
+                <span>Puppy prep</span><span>9 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-and-cats.html" class="blog-item">
+              <div class="blog-item-title">Can a Bullmastiff Live With a Cat? How to Make It Work (or Not)</div>
+              <div class="blog-item-meta">
+                <span>Lifestyle</span><span>7 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-in-apartment.html" class="blog-item">
+              <div class="blog-item-title">Can a Bullmastiff Live in an Apartment With No Yard?</div>
+              <div class="blog-item-meta">
+                <span>Lifestyle</span><span>7 min read</span>
+              </div>
+            </a>
+
+            <a href="are-bullmastiffs-aggressive.html" class="blog-item">
+              <div class="blog-item-title">Are Bullmastiffs Aggressive? Temperament, Myths, and Training</div>
+              <div class="blog-item-meta">
+                <span>Temperament</span><span>8 min read</span>
+              </div>
+            </a>
+
+            <a href="training-bullmastiff-at-home.html" class="blog-item">
+              <div class="blog-item-title">Training a Bullmastiff at Home: Daily Routine for a Calm Dog</div>
+              <div class="blog-item-meta">
+                <span>Training</span><span>8 min read</span>
+              </div>
+            </a>
+
+            <a href="potty-training-bullmastiff-puppy.html" class="blog-item">
+              <div class="blog-item-title">Potty Training a Bullmastiff Puppy: From Accidents to Reliable</div>
+              <div class="blog-item-meta">
+                <span>Training</span><span>6 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-size-and-growth.html" class="blog-item">
+              <div class="blog-item-title">How Big Do Bullmastiffs Get? Size, Weight, and Growth Chart</div>
+              <div class="blog-item-meta">
+                <span>Size & growth</span><span>9 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-health-and-common-issues.html" class="blog-item">
+              <div class="blog-item-title">Bullmastiff Health: Common Problems and How Often They Get Sick</div>
+              <div class="blog-item-meta">
+                <span>Health</span><span>10 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-cost-of-ownership.html" class="blog-item">
+              <div class="blog-item-title">Is It Expensive to Own a Bullmastiff? Real Monthly and Yearly Costs</div>
+              <div class="blog-item-meta">
+                <span>Money</span><span>7 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-grooming-guide.html" class="blog-item">
+              <div class="blog-item-title">Bullmastiff Grooming: Shedding, Drool, Nails, and Smell</div>
+              <div class="blog-item-meta">
+                <span>Care</span><span>7 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-crate-or-no-crate.html" class="blog-item">
+              <div class="blog-item-title">Do You Need a Crate for a Bullmastiff? How to Use It Without Being Cruel</div>
+              <div class="blog-item-meta">
+                <span>Lifestyle</span><span>7 min read</span>
+              </div>
+            </a>
+
+            <a href="bullmastiff-and-babies.html" class="blog-item">
+              <div class="blog-item-title">Bullmastiff and Human Babies: Making It Safe When a Newborn Comes Home</div>
+              <div class="blog-item-meta">
+                <span>Family</span><span>9 min read</span>
+              </div>
+            </a>
+
+            <a href="best-leash-and-collar-for-bullmastiff.html" class="blog-item">
+              <div class="blog-item-title">Best Leash, Collar, and Harness Setup for a Bullmastiff</div>
+              <div class="blog-item-meta">
+                <span>Gear</span><span>5 min read</span>
+              </div>
+            </a>
+
+            <a href="what-to-feed-bullmastiff.html" class="blog-item">
+              <div class="blog-item-title">What to Feed a Bullmastiff: Puppy and Adult Diet Guide</div>
+              <div class="blog-item-meta">
+                <span>Feeding</span><span>10 min read</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+          <h2 class="section-title">
+            About this site
+            <span>Why it exists</span>
+          </h2>
+          <p style="font-size: 13px; color: var(--text-muted); max-width: 50rem;">
+            KnowYourBullmastiff.com is a deliberately small website created to answer the questions
+            people actually have when they’re thinking about living with a Bullmastiff. No breed politics,
+            no kennel drama, no sugar-coating. Just straightforward info, based on real life with real dogs.
+          </p>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+        <div class="sidebar-card">
+          <div class="sidebar-title">Future logo & brand</div>
+          <p>
+            This area can become a small <strong>“About the author”</strong> box with your photo, a Bullmastiff logo,
+            or a fun sketch of the breed.
+          </p>
+          <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">
+            For now it’s just a placeholder. Drop in a 1:1 square image here once you have a logo.
+          </p>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-title">Ad space (top)</div>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            When you add ads (Google AdSense or similar), this block can hold a 300x250 or 300x600 ad unit.
+          </p>
+          <div class="ad-slot">
+            Ad slot placeholder<br />(e.g. 300×250)
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-title">Quick links</div>
+          <ul class="sidebar-list">
+            <li>
+              <span>Puppy basics</span>
+              <a href="bullmastiff-puppy-preparation-checklist.html">Read guide →</a>
+            </li>
+            <li>
+              <span>Diet & growth</span>
+              <a href="bullmastiff-size-and-growth.html">Growth chart →</a>
+            </li>
+            <li>
+              <span>Training</span>
+              <a href="training-bullmastiff-at-home.html">Training plan →</a>
+            </li>
+            <li>
+              <span>Reality check</span>
+              <a href="are-bullmastiffs-aggressive.html">Temperament truth →</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-title">Email updates (optional)</div>
+          <p style="font-size: 12px; color: var(--text-muted);">
+            If you ever want to build a small list: plug this into any email service.
+          </p>
+          <div class="newsletter">
+            <div><strong>Stay in the loop</strong></div>
+            <p>No spam, just occasional Bullmastiff tips.</p>
+            <form class="newsletter-form" onsubmit="return false;">
+              <input type="email" placeholder="your@email.com" />
+              <button type="submit">Maybe later</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-title">Ad space (bottom)</div>
+          <div class="ad-slot">
+            Another ad slot placeholder<br />(e.g. responsive banner)
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> KnowYourBullmastiff.com. All rights reserved.</div>
+      <div><a href="#top">Back to top ↑</a></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
